@@ -1,0 +1,32 @@
+@import 'mixins.scss';
+
+$page-width: 760px;
+$body-color-top: #ffe;
+$body-color-bottom: #dfa;
+
+$default-radius: .8em;
+
+body {
+}
+
+@mixin layout {
+  width: $page-width;
+  margin: auto;
+  padding: 0 .5em;
+}
+
+header {
+  @include layout;
+}
+
+#content {
+  @include layout;
+  color: white;
+  @include background-gradient(#888, #222);
+  @include border-radius($default-radius, $default-radius, 0, 0);
+  
+}
+
+footer {
+  @include layout;
+}
