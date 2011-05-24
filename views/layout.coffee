@@ -1,10 +1,10 @@
 doctype 5
 html ->
   head ->
-    title 'Express Coffee with CoffeeKup'
     meta charset: 'utf-8'
 
-    title "#{@title} | My Site" if @title?
+    title 'Snake'
+    title "Snake: #{@title}" if @title?
     meta(name: 'description', content: @description) if @description?
     link(rel: 'canonical', href: @canonical) if @canonical?
 
@@ -25,5 +25,5 @@ html ->
       @body
 
     footer ->
-      p -> a href: '/privacy', -> 'Privacy Policy'
+      p -> a href: 'anders@janmyr.com', -> 'Anders Janmyr'
 
