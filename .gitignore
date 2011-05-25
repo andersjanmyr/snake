@@ -2,5 +2,6 @@ node_modules
 *.js
 *.css
 .sass-cache
+docs/*.html
 
 
